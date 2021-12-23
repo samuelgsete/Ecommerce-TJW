@@ -1,0 +1,13 @@
+br\edu\ifce\controller\CarrinhoController.class
+br\edu\ifce\model\Item.class
+br\edu\ifce\model\Cliente.class
+br\edu\ifce\model\Produto.class
+br\edu\ifce\config\JpaInit.class
+br\edu\ifce\controller\ProdutoController.class
+br\edu\ifce\model\EntidadeBase.class
+br\edu\ifce\config\RepositorioProduto.class
+br\edu\ifce\config\RepositorioCliente.class
+br\edu\ifce\model\Carrinho.class
+br\edu\ifce\controller\Auth.class
+br\edu\ifce\controller\CadastrarProduto.class
+br\edu\ifce\controller\LojaController.class

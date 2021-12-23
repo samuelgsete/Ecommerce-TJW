@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Cadastro de Produto</title>
+		<style>		
+			.container {
+				width: 100%;
+				height: 90vh;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: center;
+			}
+			
+			form {
+				width: 320px;
+				display: flex;
+				flex-direction: column;
+				box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+				padding: 50px 20px;
+			}
+			
+			form, input, button, textarea {
+				margin: 10px;
+			}
+			
+			input, button, textarea {
+				padding: 10px;
+				cursor: pointer;
+				border-radius: 12px;
+			}
+			
+			button {
+				border: 2px solid #1976D2;
+				background-color: #1976D2;
+				color: #F5F5F5;
+			}
+			
+			input, textarea {
+				border: 2px solid #1976D2;
+				color: #1976D2;
+			}
+			
+			h3 {
+				color: #1976D2;
+				font-family: 'Tahoma';
+				text-align: center;
+				font-size: 16px;
+			}
+			
+			.container a {
+				margin-top: 10px;
+				color: #1976D2;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<form action="CadastrarProduto" method="post">
+				<h3>Cadastro de Produto</h3>
+				<input type="text" placeholder="Nome" name="nome" />
+				<input type="text" placeholder="Preço" name="preco" />
+				<input type="number" placeholder="Estoque" name="estoque" min="1" max="100">
+				<textarea placeholder="Detalhes" name="detalhes"></textarea>
+				<button type="submit">Cadastrar</button>
+				<a href="ProdutoController?app=listar">Listar Produtos</a>
+			</form>
+		</div>
+	</body>
+</html>
